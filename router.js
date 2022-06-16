@@ -37,6 +37,12 @@ module.exports = (app) => {
         res.status(400).json({ data: false });
     });
 
+    // Sample Router
+    router.use(
+        `${apiEndpoint}/sample`,
+        require('./api/v1/sample/sample.router')(app.oauth.authorise())
+    );
+
     router.use('*', (req, res, next) => {
         throw opErrorCodes.OP_ERR_INVALID_URL(req.path);
     });

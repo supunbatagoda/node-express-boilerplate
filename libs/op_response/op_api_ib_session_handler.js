@@ -1,6 +1,6 @@
 'use strict';
 
-const apiSessionService = require('../../services/api_inbound_session/api_ib_session.service');
+// const apiSessionService = require('../../services/api_inbound_session/api_ib_session.service');
 const opLogger = require('../op_logger/op_logger.js');
 const opErrorCodes = require('../op_errors/op_error_codes');
 const { extractToken } = require('../../utils/helpers');
@@ -22,14 +22,14 @@ module.exports.updateApiSession = async function (
             updateData = { status: status };
         }
 
-        const updatedApiSessionData = await apiSessionService.updateSession(
-            apiIbSessionId,
-            updateData,
-            resp
-        );
-        if (updatedApiSessionData.success) {
-            return updatedApiSessionData.data;
-        }
+        // const updatedApiSessionData = await apiSessionService.updateSession(
+        //     apiIbSessionId,
+        //     updateData,
+        //     resp
+        // );
+        // if (updatedApiSessionData.success) {
+        //     return updatedApiSessionData.data;
+        // }
         return false;
     } catch (err) {
         opLogger.logServiceError(
