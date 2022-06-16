@@ -1,6 +1,6 @@
 'use strict';
 
-const CONTROLLER_NAME = 'User';
+const CONTROLLER_NAME = 'Sample';
 
 const opLogger = require('../../../libs/op_logger/op_logger');
 const errorCodes = require('../../../libs/op_errors/op_error_codes');
@@ -8,8 +8,8 @@ const errorCodes = require('../../../libs/op_errors/op_error_codes');
 const opSuccessResp = require('../../../libs/op_response/op_success_resp');
 const opFailedResp = require('../../../libs/op_response/op_failed_resp');
 
-const UserService = require('../../../services/user/user.service');
-const validateUser = require('../../../services/user/user.validator');
+const UserService = require('../../../services/sample/sample.service');
+const validateUser = require('../../../services/sample/sample.validator');
 
 async function getAllUsers(req, res, next) {
     try {
