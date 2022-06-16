@@ -1,0 +1,62 @@
+{
+  "name": "node-express-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for building production-ready RESTful APIs using Node.js, Express, and MySql.",
+  "main": "router.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "swagger": "swagger",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supunbatagoda/node-express-boilerplate.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi",
+    "es6",
+    "es2018"
+  ],
+  "author": "Supun Manaram Batagoda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supunbatagoda/node-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/supunbatagoda/node-express-boilerplate#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.2",
+    "fast-safe-stringify": "^2.0.7",
+    "fast-xml-parser": "^3.19.0",
+    "joi": "^17.4.0",
+    "jsonata": "^1.8.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "nanoid": "^3.1.21",
+    "node-oauth2-server": "^2.4.0",
+    "node-schedule": "^2.0.0",
+    "nodemon": "^2.0.9",
+    "pino": "^6.11.3",
+    "pino-colada": "^2.1.0",
+    "pino-pretty": "^7.5.1",
+    "sequelize-cli": "^6.2.0",
+    "square": "^13.1.0",
+    "swagger": "^0.7.5",
+    "swagger-cli": "^2.3.5",
+    "swagger-editor": "^3.15.10",
+    "swagger-ui": "^3.45.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1"
+  }
+}
