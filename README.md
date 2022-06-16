@@ -45,6 +45,8 @@ A boilerplate for building production-ready RESTful APIs using Node.js, Express,
         _deploy/node-oauth2-server/ error.js grant.js files to
         node_modules/node-oauth2-server/lib
 
+        cp {_deploy/node-oauth2-server/error.js,_deploy/node-oauth2-server/grant.js} node_modules/node-oauth2-server/lib/
+
 ## Update System Environment Variable
 
 ### for linux users
